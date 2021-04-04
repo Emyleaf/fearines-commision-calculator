@@ -1,0 +1,70 @@
+.gallery {
+  margin: 10px 50px;
+}
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#quantitypg {
+  width: 3em;
+  height: 3em;
+}
+body {
+  background-color: #ffefef;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.active {
+  background-color: #fdd5d5;
+  border-radius: 100px;
+}
+#divnav {
+  text-align: center;
+}
+#divnav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  list-style-type: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: rgba(24, 59, 114, 0.794);
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.option,
+#carrello {
+  font-size: 130%;
+  text-decoration: underline;
+}
+footer {
+  text-align: right;
+  text-decoration: none;
+}
+.richiesta {
+  font-size: 120%;
+  color: rgba(24, 59, 114, 0.794);
+}
