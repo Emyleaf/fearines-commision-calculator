@@ -10,7 +10,7 @@
 </head>
 <body>
   
-<a href="index.html"><img src="img/logo_nob.png" alt="logo" class="center" width="30%" height="30%"></a>
+<a href="index.html"><img src="img/logo_nob.png" alt="logo" class="center" width="400rem" height="auto"></a>
   <div id="divnav" class="center">
     <nav>
         <ul class="menu">
@@ -80,7 +80,13 @@
   <p class="option">Vuoi aggiungere altre persone/animali? (max 5) (+5€ ad aggiunta)</p>
   
   <div id="tipo4">
-    <input type="number" id="quantitypg" name="howmanypg" onchange="checkTotal()" min="0" max="5" value="0">
+    <label for="quantitypg">personaggi aggiuntivi:
+       <input pattern="[0-9]*" placeholder="max 5 personaggi!" onchange="checkTotal()" type="text" name="howmanypg">
+    </label>
+  </div>
+
+  <div>
+    
   </div>
 
 
