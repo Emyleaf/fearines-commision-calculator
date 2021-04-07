@@ -5,10 +5,20 @@ function checkTotal() {
     var price4 = document.querySelector('input[name="howmanypg"]').value;
 
     if (parseInt(price4) > 5) {
-        price4 = 5;
+        validationMaxpg(false);
+        document.getElementById("carrello").innerHTML = "(づ｡◕‿‿◕｡)づ"
+    } else {
+        validationMaxpg(true);  
+        var totale = parseInt(price1) + parseInt(price2) + parseInt(price3) + parseInt(price4)*5;
+        document.getElementById("carrello").innerHTML = "Il costo totale è: " + totale + " €"
     }
 
-    var totale = parseInt(price1) + parseInt(price2) + parseInt(price3) + parseInt(price4)*5;
+}
 
-    document.getElementById("carrello").innerHTML = "Il costo totale è: " + totale + " €"
+function validationMaxpg(p1){
+    if(!p1){ 
+        document.getElementById("erroretipo4").innerHTML = "Inserisci un numero valido di personaggi!"
+    } else {
+        document.getElementById("erroretipo4").innerHTML = ""
+    }
 }

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linda Pardini</title>
-    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <!--<link rel="stylesheet" href="css/lightbox.min.css" />-->
     <link rel="stylesheet" href="css/style.css" />
-
 </head>
 <body>
   
-<a href="index.html"><img src="img/logo_nob.png" alt="logo" class="center" width="400rem" height="auto"></a>
+<a href="index.html"><img src="img/logo_nob.png" alt="logo" class="imglogo"></a>
+
+<!--
   <div id="divnav" class="center">
     <nav>
         <ul class="menu">
@@ -21,6 +22,9 @@
         </ul>
     </nav>
   </div>
+-->
+  <h1>Calcola il prezzo della tua commissione!</h1>
+  <h2>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
 
   <p class="option">Seleziona il tipo di disegno:</p>
 
@@ -81,14 +85,14 @@
   
   <div id="tipo4">
     <label for="quantitypg">personaggi aggiuntivi:
-       <input pattern="[0-9]*" placeholder="max 5 personaggi!" onchange="checkTotal()" type="text" name="howmanypg">
+       <input pattern="[0-9]*" placeholder="max 5 personaggi!" onchange="checkTotal()" type="text" name="howmanypg" value="0">
     </label>
   </div>
 
-  <div>
-    
-  </div>
+  <br>
+  <div id="erroretipo4">
 
+  </div>
 
   <br>
   <div id="carrello">
