@@ -4,7 +4,7 @@ function checkTotal() {
     var price3 = document.querySelector('input[name="backorno"]:checked').value;
     var price4 = document.querySelector('input[name="howmanypg"]').value;
 
-    if (parseInt(price4) > 5) {
+    if (parseInt(price4) > 5 || isNaN(price4)) {
         validationMaxpg(false);
         document.getElementById("carrello").innerHTML = "(づ｡◕‿‿◕｡)づ"
     } else {
