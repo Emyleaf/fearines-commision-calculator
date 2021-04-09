@@ -9,7 +9,6 @@
     <meta property="og:url" content="https://emyleaf.github.io/fearines-commision-calculator/index.html" />
     <meta property="og:image" content="img/logo_nob.png" />
     <title>Fearines Commission Calculator</title>
-    <!--<link rel="stylesheet" href="css/lightbox.min.css" />-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/icon.png">
 </head>
@@ -29,12 +28,15 @@
     </nav>
   </div>
 -->
-  <h1>Calcola il prezzo della tua commissione!</h1>
+
+  <button id="switch-lang" class="italiano"></button>
+
+  <h1><span lang="eng">Calculate your commission price!</span><span lang="ita">Calcola il prezzo della tua commissione!</span></h1>
   <h2>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
 
   <hr>
-
-  <p class="option">Seleziona il tipo di disegno:</p>
+  
+  <p class="option"><span lang="eng">Select your drawing:</span><span lang="ita">Seleziona il tipo di disegno:</span></p>
 
   <div id="tipo">
     <label for="icon">
@@ -59,7 +61,7 @@
     </label>
   </div>
 
-  <p class="option">Dettagliato?</p>
+  <p class="option"><span lang="eng">Detailed?</span><span lang="ita">Dettagliato?</span></p>
 
   <div id="tipo2">
     <label for="nodett">
@@ -68,11 +70,11 @@
     </label>
     <label for="sidett">
       <input type="radio" id="sidett" name="sempordett" class="container" onchange="checkTotal()" value="5">
-      <span>Sì (+5€)</span>
+      <span lang="eng">Yes (+5€)</span><span lang="ita">Sì (+5€)</span>
     </label>
   </div>
 
-  <p class="option">Background? (Il prezzo varierà in base ai dettagli richiesti!)</p>
+  <p class="option"><span lang="eng">Background? (The price will vary according to the amount of details!)</span><span lang="ita">Background? (Il prezzo varierà in base ai dettagli richiesti!)</span></p>
 
   <div id="tipo3">
     <label for="nobackground">
@@ -81,35 +83,40 @@
     </label>
     <label for="sibackground">
       <input type="radio" id="sibackground" name="backorno" class="container" onchange="checkTotal()" value="5">
-      <span>Sì, semplice (+5€)</span>
+      <span lang="eng">Yes, a simple one (+5€)</span><span lang="ita">Sì, semplice (+5€)</span>
     </label>
     <label for="sibackgrounddett">
       <input type="radio" id="sibackgrounddett" name="backorno" class="container" onchange="checkTotal()" value="10">
-      <span>Sì, dettagliato (+10€ in poi, max +25€)</span>
+      <span lang="eng">Yes, a detailed one (from +10€ to +25€)</span><span lang="ita">Sì, dettagliato (da +10€ fino a un massimo di +25€)</span>
     </label>
   </div>
   
-  <p class="option">Vuoi aggiungere altre persone/animali? (max 5) (+5€ ad aggiunta)</p>
+  <p class="option"><span lang="eng">Wanna add more people/animals? (max 5) (+5€ each one)</span><span lang="ita">Vuoi aggiungere altre persone/animali? (max 5) (+5€ ad aggiunta)</span></p>
   
   <div id="tipo4">
-    <label for="quantitypg">personaggi aggiuntivi:
+    <label for="quantitypg"><span lang="eng">additional characters: </span><span lang="ita">personaggi aggiuntivi: </span>
        <input pattern="[0-9]*" placeholder="max 5 personaggi!" onchange="checkTotal()" type="text" name="howmanypg" value="0">
     </label>
   </div>
 
   <br>
-  <div id="erroretipo4">
-
+  <div id="erroretipo4" style="display: none;">
+    <div>
+      <span lang='eng'>Enter a valid number of characters!</span>
+    </div>
+    <div>
+      <span lang='ita'>Inserisci un numero valido di personaggi!</span>
+    </div>
   </div>
 
   <br>
   <div id="carrello">
-    Il costo totale è: 10 €
+    <span lang="eng">Total price is: 10 €</span><span lang="ita">Il costo totale è: 10 €</span>
   </div>
 
   <br>
   
-  <p class="richiesta"> <a href="http://instagram.com/_u/fearines_">Clicca qui per contattarmi su Instagram! ▽・ᴥ・▽</a></p>
+  <p class="richiesta"><a href="http://instagram.com/_u/fearines_"><span lang="eng">Click here and contact me on Instagram! ▽・ᴥ・▽</span><span lang="ita">Clicca qui per contattarmi su Instagram! ▽・ᴥ・▽</span></a></p>
   <a href="http://instagram.com/_u/fearines_"><img src="img/instagram.png" alt="logo" width="40px"></a>
 
   <br>
@@ -120,6 +127,7 @@
     <a href="https://www.instagram.com/fearines_/">@fearines_</a>
   </footer>
 
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/carrello.js"></script>
 
 </body>
