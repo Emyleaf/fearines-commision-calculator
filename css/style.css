@@ -19,6 +19,7 @@
   display: block;
   margin: 0 auto;
   max-width: 300px;
+  padding-bottom: 20px;
 }
 #quantitypg {
   width: 3em;
