@@ -38,24 +38,24 @@
   
   <p class="option"><span lang="eng">Select your drawing:</span><span lang="ita">Seleziona il tipo di disegno:</span></p>
 
-  <div id="tipo">
-    <label for="icon">
+  <div id="tipo" class="parent">
+    <label for="icon" class="box">
       <input type="radio" id="icon" name="tipodisegno" class="container" onchange="checkTotal()" value="10" checked>
       <span>Icon pet (+10€)</span>
     </label>
-    <label for="icon2">
+    <label for="icon2" class="box">
       <input type="radio" id="icon2" name="tipodisegno" class="container" onchange="checkTotal()" value="20">
       <span>Icon pet with you (+20€)</span>
     </label>
-    <label for="portrait">
+    <label for="portrait" class="box">
       <input type="radio" id="portrait" name="tipodisegno" class="container" onchange="checkTotal()" value="30">
       <span>Portrait (+30€)</span>
     </label>
-    <label for="halfbody">
+    <label for="halfbody" class="box">
       <input type="radio" id="halfbody" name="tipodisegno" class="container" onchange="checkTotal()" value="40">
       <span>Half-body (+40€)</span>
     </label>
-    <label for="fullbody">
+    <label for="fullbody" class="box">
       <input type="radio" id="fullbody" name="tipodisegno" class="container" onchange="checkTotal()" value="50">
       <span>Full body (+50€)</span>
     </label>
@@ -63,12 +63,12 @@
 
   <p class="option"><span lang="eng">Detailed?</span><span lang="ita">Dettagliato?</span></p>
 
-  <div id="tipo2">
-    <label for="nodett">
+  <div id="tipo2" class="parent">
+    <label for="nodett" class="box">
       <input type="radio" id="nodett" name="sempordett" class="container" onchange="checkTotal()" value="0" checked>
       <span>No (+0€)</span>
     </label>
-    <label for="sidett">
+    <label for="sidett" class="box">
       <input type="radio" id="sidett" name="sempordett" class="container" onchange="checkTotal()" value="5">
       <span lang="eng">Yes (+5€)</span><span lang="ita">Sì (+5€)</span>
     </label>
@@ -76,16 +76,16 @@
 
   <p class="option"><span lang="eng">Background? (The price will vary according to the amount of details!)</span><span lang="ita">Background? (Il prezzo varierà in base ai dettagli richiesti!)</span></p>
 
-  <div id="tipo3">
-    <label for="nobackground">
+  <div id="tipo3" class="parent">
+    <label for="nobackground" class="box">
       <input type="radio" id="nobackground" name="backorno" class="container" onchange="checkTotal()" value="0" checked>
       <span>No (+0€)</span>
     </label>
-    <label for="sibackground">
+    <label for="sibackground" class="box">
       <input type="radio" id="sibackground" name="backorno" class="container" onchange="checkTotal()" value="5">
       <span lang="eng">Yes, a simple one (+5€)</span><span lang="ita">Sì, semplice (+5€)</span>
     </label>
-    <label for="sibackgrounddett">
+    <label for="sibackgrounddett" class="box">
       <input type="radio" id="sibackgrounddett" name="backorno" class="container" onchange="checkTotal()" value="10">
       <span lang="eng">Yes, a detailed one (from +10€ to +25€)</span><span lang="ita">Sì, dettagliato (da +10€ fino a un massimo di +25€)</span>
     </label>
@@ -93,7 +93,7 @@
   
   <p class="option"><span lang="eng">Wanna add more people/animals? (max 5) (+5€ each one)</span><span lang="ita">Vuoi aggiungere altre persone/animali? (max 5) (+5€ ad aggiunta)</span></p>
   
-  <div id="tipo4">
+  <div id="tipo4" class="parent">
     <label for="quantitypg"><span lang="eng">additional characters: </span><span lang="ita">personaggi aggiuntivi: </span>
        <input pattern="[0-9]*" placeholder="max 5 personaggi!" onchange="checkTotal()" type="text" name="howmanypg" value="0">
     </label>

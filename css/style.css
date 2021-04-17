@@ -104,3 +104,13 @@ input[type="radio"]:checked ~ span {
   height: 30px;
   width: 45px;
 }
+.box {
+  flex: 0 1 175px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
